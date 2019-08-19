@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="ren.liushuang.fangdalian.dao.MetaDataMapper">
+  <insert id="insert">
+    insert into meta_data
+    (
+      url,
+      publish_time,
+      created_time,
+      block_no,
+      yongdi_mianji,
+      jianzhu_mianji,
+      start_price,
+      finish_price,
+      main_content,
+      tudi_shiyong_xingzhi
+    )values (
+      #{url},
+      #{publishTime},
+      #{createdTime},
+      #{blockNo},
+      #{yongdiMianji},
+      #{jianzhuMianji},
+      #{startPrice},
+      #{finishPrice},
+      #{mainContent},
+      #{tudiShiyongXingzhi}
+    )
+  </insert>
+</mapper>
